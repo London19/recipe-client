@@ -5,7 +5,10 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-
+const events = require('./events.js')
 $(() => {
-  // your JS code goes here
+  events.addHandlers()
+  $('.sunflower').on('click', events.sunflower)
+  $('.peppa-pig').on('click', events.peppaPig)
+  $('.baby-shark').on('click', events.babyShark)
 })
