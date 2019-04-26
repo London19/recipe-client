@@ -8,7 +8,7 @@
 const events = require('./events.js')
 $(() => {
   events.addHandlers()
-  $('.sunflower').on('click', events.sunflower)
-  $('.peppa-pig').on('click', events.peppaPig)
-  $('.baby-shark').on('click', events.babyShark)
+  $('.sunflower').on('click', events.getSunflower)
+  $('.peppa-pig').on('click', events.getPeppaPig)
+  $('.baby-shark').on('click', events.getBabyShark)
 })
