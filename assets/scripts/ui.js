@@ -1,3 +1,4 @@
+const store = require('./store')
 
 const getSunflowerSuccess = function (data) {
   // $('.sunflower').on('click', getSunflower)
@@ -17,6 +18,7 @@ const signUpFailure = function (data) {
 }
 
 const signInSuccess = function (data) {
+  store.user = data.user
   console.log('succeed')
 }
 
