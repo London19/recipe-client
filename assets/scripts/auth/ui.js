@@ -1,17 +1,5 @@
-const store = require('./store')
+const store = require('../store')
 
-const getSunflowerSuccess = function (data) {
-  return fetch('http://localhost:4741/recipes')
-    .then(res => res.json())
-    .then(data => console.log(data))
-  // $('.sunflower').on('click', getSunflower)
-  // console.log('succeed')
-  // console.log(data.recipe)
-}
-
-const getSunflowerFailure = function (data) {
-  console.log('failed')
-}
 const signUpSuccess = function (data) {
   console.log('succeed')
 }
@@ -46,8 +34,6 @@ const signOutFailure = function () {
 }
 
 module.exports = {
-  getSunflowerSuccess,
-  getSunflowerFailure,
   signUpSuccess,
   signUpFailure,
   signInSuccess,
@@ -56,6 +42,5 @@ module.exports = {
   changePwFailure,
   signOutSuccess,
   signOutFailure
-  // getSunflower
 
 }

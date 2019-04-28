@@ -1,12 +1,6 @@
-const config = require('./config.js')
-const store = require('./store')
+const config = require('../config.js')
+const store = require('../store')
 
-const getSunflower = function (id) {
-  return $.ajax({
-    url: config.apiUrl + '/recipes/2',
-    method: 'GET'
-  })
-}
 const signUp = function (data) {
   return $.ajax({
     url: config.apiUrl + '/sign-up',
@@ -45,7 +39,6 @@ const signOut = function () {
 }
 
 module.exports = {
-  getSunflower,
   signUp,
   signIn,
   changePassword,

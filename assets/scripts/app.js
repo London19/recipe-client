@@ -5,10 +5,13 @@
 
 // use require without a reference to ensure a file is bundled
 // require('./example')
-const events = require('./events.js')
+const recipeEvents = require('./recipes/events.js')
+const authEvents = require('./auth/events.js')
+
 $(() => {
-  events.addHandlers()
-  $('.sunflower').on('click', events.getSunflower)
-  $('.peppa-pig').on('click', events.getPeppaPig)
-  $('.baby-shark').on('click', events.getBabyShark)
+  recipeEvents.addHandlers()
+  authEvents.addHandlers()
+  // $('#get-recipes').on('click', events.getRecipe)
+  // $('.peppa-pig').on('click', events.getPeppaPig)
+  // $('.baby-shark').on('click', events.getBabyShark)
 })
