@@ -20,6 +20,23 @@ const getSunflower = function (event) {
     })
     .catch(ui.getSunflowerFailure)
 }
+
+// const showDate = function () {
+// loadJSON("http://localhost:4741/recipes", gotData, 'jsonp')
+// }
+
+// const gotData = function (data) {
+// printLine(data)
+// }
+
+// const recipeChoose = document.querySelector('section')
+// const recipeDisplay = document.querySelector('pre')
+
+// recipeChoose.onchange = function () {
+// const recipe = recipeChoose.value
+// updateDisplay(recipe)
+// }
+
 const onSignUp = function (event) {
   event.preventDefault()
 

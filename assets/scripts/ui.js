@@ -1,9 +1,12 @@
 const store = require('./store')
 
 const getSunflowerSuccess = function (data) {
+  return fetch('http://localhost:4741/recipes')
+    .then(res => res.json())
+    .then(data => console.log(data))
   // $('.sunflower').on('click', getSunflower)
-  console.log('succeed')
-  console.log(data.recipe)
+  // console.log('succeed')
+  // console.log(data.recipe)
 }
 
 const getSunflowerFailure = function (data) {
