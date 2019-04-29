@@ -1,6 +1,21 @@
 {{#each recipes as |recipe|}}
-  <section>
-    <h6>{{recipe.name}}</h6>
+{{log recipe}}
+  <section data-id="{{recipe.id}}">
+    <h3>
+      {{recipe.name}}
+    </h3>
+    <h5>
+      {{recipe.id}}
+    </h5>
+    <p>
+      {{recipe.ingredient}}
+    </p>
+    <p>
+      {{recipe.description}}
+      <button data-id="{{recipe.id}}" class="delete-recipe">Delete Recipe</button>
+
+    </p>
+
   </section>
 
 {{/each}}

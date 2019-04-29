@@ -15,10 +15,41 @@ const getRecipesFailure = (error) => {
   console.error(error)
 }
 
+const createRecipesSuccess = (data) => {
+  const showRecipesHtml = showRecipesTemplate({ recipes: data.recipes })
+  $('.content').html(showRecipesHtml)
+}
+
+const createRecipesFailure = (error) => {
+  console.error(error)
+}
+
+const changeRecipesSuccess = () => {
+  $('#change-recipe').trigger('reset')
+}
+
+const changeRecipesFailure = (error) => {
+  console.error(error)
+}
+
+const deleteRecipesSuccess = (data) => {
+  $('.content').empty()
+}
+
+const deleteRecipesFailure = (error) => {
+  console.error(error)
+}
+
 module.exports = {
   getRecipesSuccess,
   getRecipesFailure,
   showRecipesTemplate,
-  clearRecipes
+  clearRecipes,
+  createRecipesSuccess,
+  createRecipesFailure,
+  changeRecipesSuccess,
+  changeRecipesFailure,
+  deleteRecipesSuccess,
+  deleteRecipesFailure
 
 }

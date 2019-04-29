@@ -36,14 +36,36 @@
       placeholder="new password">
       <input type="submit" value="Change Password">
 </form>
+<form id="sign-out">
+<input type="submit" value="Sign Out">
+</form>
 
 <button id="get-recipes">Get All Recipes</button>
-    <section id="recipe-choose" class="button">
 
-          <form id="sign-out">
-          <input type="submit" value="Sign Out">
-          </form>
-    </section>
+      <form id="create-recipe">
+        <button type="submit">Create Recipe</button>
+        <input type="text" name="recipe[name]"
+        placeholder="Recipe Name">
+        <textarea class="form-control" name="recipe[ingredient]" rows="3"
+        placeholder="Recipe Ingredient"></textarea>
+        <textarea class="form-control" name="recipe[description]" rows="3"
+        placeholder="Recipe Description"></textarea>
+      </form>
+
+  <form id="change-recipe">
+    <button type="submit">Change Recipe</button>
+      <input type="text" name="recipe[id]"
+      placeholder="Recipe ID">
+      <input type="text" name="recipe[name]"
+      placeholder="New Recipe Name">
+      <textarea class="form-control" name="recipe[ingredient]" rows="3"
+      placeholder="Recipe Ingredient"></textarea>
+      <textarea class="form-control" name="recipe[description]" rows="3"
+      placeholder="Recipe Description"></textarea>
+    </form>
+
+
+
 <main>
   <div id="content" class="content"></div>
 </main>
