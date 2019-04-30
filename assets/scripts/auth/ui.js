@@ -1,36 +1,73 @@
 const store = require('../store')
 
 const signUpSuccess = function (data) {
-  console.log('succeed')
+  $('.show-message').text('Successfully Signed Up!').show()
+  $('.show-message').hide(2000)
+  $('#sign-up').hide()
+  $('form').trigger('reset')
 }
 
 const signUpFailure = function (data) {
-  console.log('failed')
+  $('.show-message').text('Sign Up Failed').show()
+  $('.show-message').hide(2000)
+  $('#get-recipes').hide()
+  $('#create-recipe').hide()
+  $('#change-recipe').hide()
+  $('form').trigger('reset')
 }
 
 const signInSuccess = function (data) {
   store.user = data.user
-  console.log('succeed')
+  $('.show-message').text('Welcome!').show()
+  $('.show-message').hide(3000)
+  $('#change-password').show()
+  $('#sign-up').hide()
+  $('#sign-in').hide()
+  $('#sign-out').show()
+  $('form').trigger('reset')
+  $('#get-recipes').show()
+  $('#create-recipe').show()
+  $('#change-recipe').show()
 }
 
 const signInFailure = function (data) {
-  console.log('failed')
+  $('.show-message').text('Sign In Failed').show()
+  $('.show-message').hide(2000)
+  $('#change-password').hide()
+  $('#sign-out').hide()
+  $('form').trigger('reset')
 }
 
 const changePwSuccess = function () {
-  console.log('succeed')
+  $('.show-message').text('Successfully changed your password!').show()
+  $('.show-message').hide(2000)
+  $('form').trigger('reset')
 }
 
 const changePwFailure = function () {
-  console.log('failed')
+  $('.show-message').text('Chang password failed!').show()
+  $('.show-message').hide(2000)
+  $('form').trigger('reset')
 }
 
 const signOutSuccess = function () {
-  console.log('succeed')
+  $('.show-message').text('Thank you for using my app! ').show()
+  $('.show-message').hide(3500)
+  $('#change-password').hide()
+  $('#sign-in').show()
+  $('#sign-up').show()
+  $('#sign-out').hide()
+  $('form').trigger('reset')
+  $('#get-recipes').hide()
+  $('#create-recipe').hide()
+  $('#change-recipe').hide()
+  $('.content').empty()
 }
 
 const signOutFailure = function () {
-  console.log('failed')
+  $('.show-message').text('Sign out failed!').show()
+  $('.show-message').hide(2000)
+  $('form').trigger('reset')
 }
 
 module.exports = {

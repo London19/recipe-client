@@ -2,9 +2,9 @@
 const showRecipesTemplate = require('../templates/recipes-listing.handlebars')
 
 const getRecipesSuccess = (data) => {
-  console.log(data)
   const showRecipesHtml = showRecipesTemplate({ recipes: data.recipes })
   $('.content').html(showRecipesHtml)
+  $('#change-recipe').trigger('reset')
 }
 
 const clearRecipes = () => {
@@ -18,6 +18,7 @@ const getRecipesFailure = (error) => {
 const createRecipesSuccess = (data) => {
   const showRecipesHtml = showRecipesTemplate({ recipes: data.recipes })
   $('.content').html(showRecipesHtml)
+  $('#create-recipe').trigger('reset')
 }
 
 const createRecipesFailure = (error) => {

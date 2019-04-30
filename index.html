@@ -12,8 +12,11 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Kids' Recipe</h1>
-      <form id="sign-up">
+      <h1 class="front-page">Kids' Recipe</h1>
+
+      <h3 class="show-message front-page"></h3>
+
+      <form id="sign-up" class="front-page">
         <input type="email" name="credentials[email]" placeholder="Email">
         <input type="password" name="credentials[password]" placeholder="Password">
         <input type="password" name="credentials[password_confirmation]"
@@ -22,27 +25,24 @@
         </form>
 
 
-<form id="sign-in">
+<form id="sign-in" class="front-page">
   <input type="email" name="credentials[email]" placeholder="Email">
   <input type="password" name="credentials[password]"
   placeholder="Password">
   <input type="submit" value="Sign In">
 </form>
 
-<form id="change-password">
+<form id="change-password" class="center">
       <input type="password" name="passwords[old]"
       placeholder="old password">
       <input type="password" name="passwords[new]"
       placeholder="new password">
       <input type="submit" value="Change Password">
 </form>
-<form id="sign-out">
-<input type="submit" value="Sign Out">
-</form>
 
-<button id="get-recipes">Get All Recipes</button>
+<button id="get-recipes" class="get-recipe center">Get All Recipes</button>
 
-      <form id="create-recipe">
+      <form id="create-recipe" class="center">
         <button type="submit">Create Recipe</button>
         <input type="text" name="recipe[name]"
         placeholder="Recipe Name">
@@ -52,7 +52,7 @@
         placeholder="Recipe Description"></textarea>
       </form>
 
-  <form id="change-recipe">
+  <form id="change-recipe" class="center">
     <button type="submit">Change Recipe</button>
       <input type="text" name="recipe[id]"
       placeholder="Recipe ID">
@@ -64,7 +64,9 @@
       placeholder="Recipe Description"></textarea>
     </form>
 
-
+    <form id="sign-out" class="center sign-out">
+    <input type="submit" value="Sign Out">
+    </form>
 
 <main>
   <div id="content" class="content"></div>

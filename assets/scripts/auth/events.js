@@ -1,7 +1,6 @@
 const api = require('./api.js')
 const ui = require('./ui.js')
 const getFormFields = require('../../../lib/get-form-fields.js')
-// const store = require('./store')
 
 const addHandlers = function () {
   $('#sign-up').on('submit', onSignUp)
@@ -9,6 +8,12 @@ const addHandlers = function () {
   $('#change-password').on('submit', onChangePassword)
   $('#sign-out').on('submit', onSignOut)
 }
+
+$('#get-recipes').hide()
+$('#create-recipe').hide()
+$('#change-recipe').hide()
+$('#change-password').hide()
+$('#sign-out').hide()
 
 const onSignUp = function (event) {
   event.preventDefault()
