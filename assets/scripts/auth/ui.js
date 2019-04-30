@@ -18,8 +18,8 @@ const signUpFailure = function (data) {
 
 const signInSuccess = function (data) {
   store.user = data.user
-  $('.show-message').text('Welcome!').show()
-  $('.show-message').hide(3000)
+  $('.show-message').text('Welcome! Please enjoy my recipes! Everyone is welcome to add your own recipes here!').show()
+  $('.show-message').hide(15000)
   $('#change-password').show()
   $('#sign-up').hide()
   $('#sign-in').hide()

@@ -11,8 +11,9 @@ const clearRecipes = () => {
   $('.content').empty()
 }
 
-const getRecipesFailure = (error) => {
-  console.error(error)
+const getRecipesFailure = () => {
+  $('.show-message').text('Whoops! Something wrong. Please try again!').show()
+  $('.show-message').hide(9000)
 }
 
 const createRecipesSuccess = (data) => {
@@ -21,24 +22,27 @@ const createRecipesSuccess = (data) => {
   $('#create-recipe').trigger('reset')
 }
 
-const createRecipesFailure = (error) => {
-  console.error(error)
+const createRecipesFailure = () => {
+  $('.show-message').text('Whoops! Something wrong. Please try again!').show()
+  $('.show-message').hide(9000)
 }
 
 const changeRecipesSuccess = () => {
   $('#change-recipe').trigger('reset')
 }
 
-const changeRecipesFailure = (error) => {
-  console.error(error)
+const changeRecipesFailure = () => {
+  $('.show-message').text('Whoops! You can only update your own recipe!').show()
+  $('.show-message').hide(9000)
 }
 
 const deleteRecipesSuccess = (data) => {
   $('.content').empty()
 }
 
-const deleteRecipesFailure = (error) => {
-  console.error(error)
+const deleteRecipesFailure = () => {
+  $('.show-message').text('Whoops! You can only delete your own recipe!').show()
+  $('.show-message').hide(9000)
 }
 
 module.exports = {

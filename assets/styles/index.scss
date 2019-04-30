@@ -7,6 +7,7 @@ body {
   background: lighten($info, 50%);
   background-image: url('public/recipe/Pooh Bear.JPG');
   background-size: cover;
+  background-position: center;
   margin-bottom: 100px;
   min-height: 100vh;
   padding: 1rem 0 5rem;
@@ -70,16 +71,19 @@ h1 {
   width: 50%;
   border: 3px solid $border-color;
   padding: 10px;
+  text-align: center;
 }
 
-.get-recipe {
-  margin-left: 15.35rem;
-}
-
-.front-page {
-  align-items: center;
+.name {
   margin: auto;
-  padding: 10px;
+  text-align: center;
+  width: 50%;
+}
+
+.sign-out {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav {
