@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Recipe Tracker</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+      <div class="name">
+      <h1>Kids' Recipe</h1>
+      </div>
+
+      <h3 class="show-message center"></h3>
+
+      <form id="sign-up" class="center">
+        <input type="email" name="credentials[email]" placeholder="Email">
+        <input type="password" name="credentials[password]" placeholder="Password">
+        <input type="password" name="credentials[password_confirmation]"
+        placeholder="Password Confirmation">
+        <input type="submit" value="Sign Up">
+        </form>
+
+
+<form id="sign-in" class="center">
+  <input type="email" name="credentials[email]" placeholder="Email">
+  <input type="password" name="credentials[password]"
+  placeholder="Password">
+  <input type="submit" value="Sign In">
+</form>
+
+<form id="change-password" class="center">
+      <input type="password" name="passwords[old]"
+      placeholder="old password">
+      <input type="password" name="passwords[new]"
+      placeholder="new password">
+      <input type="submit" value="Change Password">
+</form>
+<div class="center">
+<button id="get-recipes" class="get-recipe">Get All Recipes</button>
+</div>
+      <form id="create-recipe" class="center">
+        <button type="submit">Create Recipe</button>
+        <input type="text" name="recipe[name]"
+        placeholder="Recipe Name">
+        <textarea class="form-control" name="recipe[ingredient]" rows="3"
+        placeholder="Recipe Ingredient"></textarea>
+        <textarea class="form-control" name="recipe[description]" rows="3"
+        placeholder="Recipe Description"></textarea>
+      </form>
+
+  <form id="change-recipe" class="center">
+    <button type="submit">Change Recipe</button>
+      <input type="text" name="recipe[id]"
+      placeholder="Recipe ID">
+      <input type="text" name="recipe[name]"
+      placeholder="New Recipe Name">
+      <textarea class="form-control" name="recipe[ingredient]" rows="3"
+      placeholder="Recipe Ingredient"></textarea>
+      <textarea class="form-control" name="recipe[description]" rows="3"
+      placeholder="Recipe Description"></textarea>
+    </form>
+
+    <form id="sign-out" class="center sign-out">
+    <button type="submit" value="Sign Out">Sign Out</button>
+    </form>
+
+<main>
+  <div id="content" class="content"></div>
+</main>
+
+    </body>
+</html>
