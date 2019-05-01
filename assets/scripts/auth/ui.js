@@ -19,7 +19,7 @@ const signUpFailure = function (data) {
 const signInSuccess = function (data) {
   store.user = data.user
   $('.show-message').text('Welcome! Please enjoy my recipes! Everyone is welcome to add your own recipes here!').show()
-  $('.show-message').hide(15000)
+  $('.show-message').hide(9000)
   $('#change-password').show()
   $('#sign-up').hide()
   $('#sign-in').hide()
@@ -45,7 +45,7 @@ const changePwSuccess = function () {
 }
 
 const changePwFailure = function () {
-  $('.show-message').text('Chang password failed!').show()
+  $('.show-message').text('Change password failed!').show()
   $('.show-message').hide(2000)
   $('form').trigger('reset')
 }

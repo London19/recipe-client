@@ -15,8 +15,6 @@ const getRecipes = (event) => {
 const createRecipes = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
-
-  console.log(data)
   api.createRecipes(data)
     .then(ui.createRecipesSuccess)
     .catch(ui.createRecipesFailure)
@@ -24,7 +22,6 @@ const createRecipes = (event) => {
 const changeRecipes = (event) => {
   event.preventDefault()
   const data = getFormFields(event.target)
-  console.log(data)
   api.changeRecipes(data)
     .then(ui.changeRecipesSuccess)
     .then(() => getRecipes(event))

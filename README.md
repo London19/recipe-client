@@ -1,6 +1,6 @@
 ## Kids' Recipe Front-End
 
-Welcome to my Kids' Recipe Sigle Page application created with JavaScript and jQuery, Ruby and Rail. This is my second single page application built in General Assembly Software Engineering immersive. My README will show you my story, challenges while I was creating this apllication.
+Welcome to my Kids' Recipe Sigle Page application created with JavaScript and jQuery, Ruby and Rail. This is my second single page application built in General Assembly Software Engineering immersive. My README will show you my story, challenges while I was creating this apllication. In this application, I want all my users will be able to read and use my recipes that I made for my daughter. In addition, I want me users to share their recipes with everybody as well.
 
 ## Technology Used for Front-End
 •	HTML •	CSS •	JavaScript •	JQuery •	AJAX •	JSON •	Bootstrap •	API

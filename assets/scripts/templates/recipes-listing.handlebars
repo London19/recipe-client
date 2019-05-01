@@ -1,5 +1,5 @@
 {{#each recipes as |recipe|}}
-{{log recipe}}
+
   <section data-id="{{recipe.id}}">
     <h3>
       {{recipe.name}}
@@ -17,7 +17,11 @@
     <p>
       {{recipe.description}}
     </p>
-    <img src="public/recipe/{{recipe.name}}.JPG" alt="RECIPE Picture" height="200px" width="300px">
+    {{#if recipe.name.exists}}
+       <img src="public/recipe/{{recipe.name}}.JPG" height="200px" width="300px">}}
+     {{else}}
+       No img provided.
+     {{/if}}
 
     <button data-id="{{recipe.id}}" class="delete-recipe">Delete Recipe</button>
 
