@@ -1,4 +1,4 @@
-## Kids' Recipe
+## Kids' Recipe Front-End
 
 Welcome to my Kids' Recipe Sigle Page application created with JavaScript and jQuery, Ruby and Rail. This is my second single page application built in General Assembly Software Engineering immersive. My README will show you my story, challenges while I was creating this apllication.
 
